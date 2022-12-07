@@ -1,0 +1,418 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.15f1 (e8e88683f834) revision 15263878'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'en' Physical Memory: 16083 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.15f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/aalsohail/UnityProjects/Airplane Physics
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+49238
+Successfully changed project path to: C:/Users/aalsohail/UnityProjects/Airplane Physics
+C:/Users/aalsohail/UnityProjects/Airplane Physics
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [22668] Host "[IP] 172.16.13.9 [Port] 0 [Flags] 2 [Guid] 4264974233 [EditorId] 4264974233 [Version] 1048832 [Id] WindowsEditor(7,aalsohail0te1) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [22668] Host "[IP] 172.16.13.9 [Port] 0 [Flags] 2 [Guid] 4264974233 [EditorId] 4264974233 [Version] 1048832 [Id] WindowsEditor(7,aalsohail0te1) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 107.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.15f1 (e8e88683f834)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/aalsohail/UnityProjects/Airplane Physics/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x46a8)
+    Vendor:   Intel
+    VRAM:     8041 MB
+    Driver:   30.0.101.1369
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56736
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.022775 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 79.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.767 seconds
+Domain Reload Profiling:
+	ReloadAssembly (767ms)
+		BeginReloadAssembly (115ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (494ms)
+			LoadAssemblies (109ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (105ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (291ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (80ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (142ms)
+				ProcessInitializeOnLoadMethodAttributes (53ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.016845 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\aalsohail\UnityProjects\Airplane Physics\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\aalsohail\UnityProjects\Airplane Physics\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.227 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1228ms)
+		BeginReloadAssembly (132ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (945ms)
+			LoadAssemblies (122ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (273ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (453ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (121ms)
+				ProcessInitializeOnLoadAttributes (264ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (27ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.40 seconds
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3400 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (113.8 KB). Loaded Objects now: 3858.
+Memory consumption went from 117.8 MB to 117.7 MB.
+Total: 3.186900 ms (FindLiveObjects: 0.313500 ms CreateObjectMapping: 0.101700 ms MarkObjects: 2.623400 ms  DeleteObjects: 0.146900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 8212.565177 seconds.
+  path: Assets/IndiePixel_Framework/Core/Art/Objects/Materials
+  artifactKey: Guid(32d44daa3949b484e98daad06b4c048b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Framework/Core/Art/Objects/Materials using Guid(32d44daa3949b484e98daad06b4c048b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a109262fcc9da9d0a602e408402a3c6') in 0.017189 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.050177 seconds.
+  path: Assets/IndiePixel_Framework/Core/Art/Objects/Materials/phong1.mat
+  artifactKey: Guid(c55cb56521a0f49438bd8dd2cb78c812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Framework/Core/Art/Objects/Materials/phong1.mat using Guid(c55cb56521a0f49438bd8dd2cb78c812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4906d31cbd731587c68cf4ab2f319c55') in 0.237549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.538106 seconds.
+  path: Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Art/default_grid.fbx
+  artifactKey: Guid(b86400b53015cdd498953c1be46c64d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Art/default_grid.fbx using Guid(b86400b53015cdd498953c1be46c64d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61c3603ac6aa33e61b5b70a677f9359d') in 0.075044 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 194.706740 seconds.
+  path: Assets/IndiePixel_Framework/Core/Art/Grids/Orange_Grid_MAT.mat
+  artifactKey: Guid(7e0195a3a636ffa41b6cc396ddae4758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Framework/Core/Art/Grids/Orange_Grid_MAT.mat using Guid(7e0195a3a636ffa41b6cc396ddae4758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd078bb923fe2af7899789829fc81803') in 0.019027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.576368 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8193726cff86800c54781cdc6d54904') in 0.006162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.683007 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6acd989d8e132ea94e88e922956c4c74') in 0.007044 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.887327 seconds.
+  path: Assets/Scenes/Development Scene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Development Scene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '657de36bddc3a68c1859761f728529bd') in 0.005181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 49.485720 seconds.
+  path: Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Textures/btn-5px_br_solid.png
+  artifactKey: Guid(ac333647fffa8094a9dbfa4f0bbe2812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Textures/btn-5px_br_solid.png using Guid(ac333647fffa8094a9dbfa4f0bbe2812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9e3fcb2744d75bb254b141c0bc6e5aa') in 0.022422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.301084 seconds.
+  path: Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Emortal_Editor_GUISkin.guiskin
+  artifactKey: Guid(29d6c788971a4d048ac9103647f2f13c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Emortal_Editor_GUISkin.guiskin using Guid(29d6c788971a4d048ac9103647f2f13c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a680f5a1e4516977581e559a2df033c') in 0.015102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Fonts/OpenSans-LightItalic.ttf
+  artifactKey: Guid(3e5c4201b07fed745a65cf9be38db54a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Fonts/OpenSans-LightItalic.ttf using Guid(3e5c4201b07fed745a65cf9be38db54a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e4f8df6f3c09fb89932b63df2b1fd75') in 0.088660 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Fonts/OpenSans-Regular.ttf
+  artifactKey: Guid(82faf00237dca174599a72696205025d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Fonts/OpenSans-Regular.ttf using Guid(82faf00237dca174599a72696205025d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ab073842ded6e0df56ffba5b0fbd548') in 0.028405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Fonts/OpenSans-Light.ttf
+  artifactKey: Guid(8e2716f4dd7250740b663348ed7671da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Fonts/OpenSans-Light.ttf using Guid(8e2716f4dd7250740b663348ed7671da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '330b175e3a8c1bfc6f7458af5f0a5db7') in 0.038046 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Resources/Materials/GG_MeshPainter_VTXColor_MAT.mat
+  artifactKey: Guid(862608f9368dc9349af14e041c55289c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Resources/Materials/GG_MeshPainter_VTXColor_MAT.mat using Guid(862608f9368dc9349af14e041c55289c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f842d9465f9e498acbd2b0d4494c3958') in 0.019113 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Fonts/OpenSans-Italic.ttf
+  artifactKey: Guid(5ad739deeebffd348a39d954e6d93b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Fonts/OpenSans-Italic.ttf using Guid(5ad739deeebffd348a39d954e6d93b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cefab425b3853f0797304d35de22aca3') in 0.023394 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Fonts/OpenSans-ExtraBold.ttf
+  artifactKey: Guid(e441c6b40acfa8d49b2a8ac54ae3a886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Fonts/OpenSans-ExtraBold.ttf using Guid(e441c6b40acfa8d49b2a8ac54ae3a886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '143b529dc1b6676ed3e20521d9ac93ef') in 0.026549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Fonts/OpenSans-Bold.ttf
+  artifactKey: Guid(a52270efa65aab44d953f3e63f0bad9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Fonts/OpenSans-Bold.ttf using Guid(a52270efa65aab44d953f3e63f0bad9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '853c02a9d7f01475e5b0813d450f569c') in 0.019126 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Fonts/OpenSans-SemiboldItalic.ttf
+  artifactKey: Guid(675304918ad96ef46ac46e6356faa470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Fonts/OpenSans-SemiboldItalic.ttf using Guid(675304918ad96ef46ac46e6356faa470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c6b741164ada7bccf188bc1b85cda5f') in 0.022926 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/IndiePixel_Framework/Core/Art/Audio/UI/Select.wav
+  artifactKey: Guid(591a9cde833b8964897d3ecd79bc9588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Framework/Core/Art/Audio/UI/Select.wav using Guid(591a9cde833b8964897d3ecd79bc9588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b0cf56904f66c1ab445390b6d8d4e7d') in 0.202720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.729151 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79842766b460edbeab6a34051e857a80') in 0.009145 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.290941 seconds.
+  path: Assets/Scenes/AirplanePhysics_Main.unity
+  artifactKey: Guid(266d0ebbd8ad3334ba2c30124753d5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/AirplanePhysics_Main.unity using Guid(266d0ebbd8ad3334ba2c30124753d5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6536eb713f1e130a9e38003a8a5151a1') in 0.006468 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.095021 seconds.
+  path: Assets/Scenes/AirplanePhysics_Main 1.unity
+  artifactKey: Guid(d88cb2fb95b33814bb006d9ce3a594fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/AirplanePhysics_Main 1.unity using Guid(d88cb2fb95b33814bb006d9ce3a594fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e619359156446955ab33709de2f9ac0') in 0.006372 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.990149 seconds.
+  path: Assets/Scenes/AirplanePhysics_Main 2.unity
+  artifactKey: Guid(b93ab5183c6c52044ad9b84f726413e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/AirplanePhysics_Main 2.unity using Guid(b93ab5183c6c52044ad9b84f726413e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6193e2fe9454c55a3f85bb6bf00c8c6') in 0.006339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.278802 seconds.
+  path: Assets/Scenes/AirplanePhysics_Frontend.unity
+  artifactKey: Guid(b93ab5183c6c52044ad9b84f726413e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/AirplanePhysics_Frontend.unity using Guid(b93ab5183c6c52044ad9b84f726413e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc067f7424d58ed3b66a8290365231b9') in 0.005310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.328913 seconds.
+  path: Assets/Scenes/AirplanePhysics_Startup.unity
+  artifactKey: Guid(b93ab5183c6c52044ad9b84f726413e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/AirplanePhysics_Startup.unity using Guid(b93ab5183c6c52044ad9b84f726413e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a6412b1f8b04c7559afd86fc347b353') in 0.005501 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 105.474036 seconds.
+  path: Assets/IndiePixel_Airplanes
+  artifactKey: Guid(e55fb091052304449885fe3f993bc1cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Airplanes using Guid(e55fb091052304449885fe3f993bc1cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c20556fcd38d9a182b00c199179a555a') in 0.005726 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.812966 seconds.
+  path: Assets/IndiePixel_Airplanes/F4U_Corsair
+  artifactKey: Guid(01fcfa6797111964f891bf2fd9f16198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Airplanes/F4U_Corsair using Guid(01fcfa6797111964f891bf2fd9f16198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79ccfd13152afc0fa0cbf7d235735ea6') in 0.005853 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.062579 seconds.
+  path: Assets/IndiePixel_Airplanes/F4U_Corsair/F4U_WithCockPit_Geo.FBX
+  artifactKey: Guid(90c72147e207e73458e047281ba1d991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Airplanes/F4U_Corsair/F4U_WithCockPit_Geo.FBX using Guid(90c72147e207e73458e047281ba1d991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ceed4afd7f4bf465d395f81ed9b2c9d') in 0.525578 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.520472 seconds.
+  path: Assets/IndiePixel_Airplanes/Indie-Pixel_Airplane
+  artifactKey: Guid(79ef8dcd9429830478115827fe8a4cdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Airplanes/Indie-Pixel_Airplane using Guid(79ef8dcd9429830478115827fe8a4cdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71655962ab0e38193d061e630a780b8d') in 0.005680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.078482 seconds.
+  path: Assets/IndiePixel_Airplanes/Indie-Pixel_Airplane/IndiePixel_Airplane.fbx
+  artifactKey: Guid(0a5b6c85101505647b87da703d0ae99a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Airplanes/Indie-Pixel_Airplane/IndiePixel_Airplane.fbx using Guid(0a5b6c85101505647b87da703d0ae99a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b97328153d1d9c9814822bc6f074a53') in 0.115537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.988546 seconds.
+  path: Assets/IndiePixel_Airplanes/Prefabs
+  artifactKey: Guid(756bbb9866b8c5a479ed8ea824a30e30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Airplanes/Prefabs using Guid(756bbb9866b8c5a479ed8ea824a30e30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1162656388c818b275d689019ef44f90') in 0.005302 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.092068 seconds.
+  path: Assets/IndiePixel_Airplanes/Prefabs/F4U_Airplane.prefab
+  artifactKey: Guid(7fec36c4ed8b3504cbfb5731ed169417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Airplanes/Prefabs/F4U_Airplane.prefab using Guid(7fec36c4ed8b3504cbfb5731ed169417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a8867efa1e01a4559c2d5e9c3985438') in 0.262083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 412.289386 seconds.
+  path: Assets/IndiePixel_Airplanes/Indie-Pixel_Airplane/Materials
+  artifactKey: Guid(103f951a4088c874691f11e22ce9e6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Airplanes/Indie-Pixel_Airplane/Materials using Guid(103f951a4088c874691f11e22ce9e6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86dc08b64eabe70d2442805e8660dbee') in 0.005822 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.067426 seconds.
+  path: Assets/IndiePixel_Airplanes/Indie-Pixel_Airplane/Materials/IndiePixel_Airplane_MAT.mat
+  artifactKey: Guid(4d0afa186ed9a7f48b9404b430babf60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Airplanes/Indie-Pixel_Airplane/Materials/IndiePixel_Airplane_MAT.mat using Guid(4d0afa186ed9a7f48b9404b430babf60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09988ffdafa0e234a6aa88750159ae0e') in 0.029585 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.192622 seconds.
+  path: Assets/IndiePixel_Framework/Prefabs
+  artifactKey: Guid(85cd88f05f5357941a8e2c393b66595a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IndiePixel_Framework/Prefabs using Guid(85cd88f05f5357941a8e2c393b66595a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f40fffa4654d49f2eaf2229cbcae4566') in 0.004727 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 65.605749 seconds.
+  path: Assets/Airplane Physics
+  artifactKey: Guid(adae8252d542c5543a56d1561e1f8ebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Airplane Physics using Guid(adae8252d542c5543a56d1561e1f8ebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f61fb53881a035a9decb77a086b4d19') in 0.005640 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.831459 seconds.
+  path: Assets/Airplane Physics/ART
+  artifactKey: Guid(b2cd1d492e565ca4a9e354d1a84544dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Airplane Physics/ART using Guid(b2cd1d492e565ca4a9e354d1a84544dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e87020660d06994e0714608a19745909') in 0.005331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.271090 seconds.
+  path: Assets/Airplane Physics/Art
+  artifactKey: Guid(b2cd1d492e565ca4a9e354d1a84544dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Airplane Physics/Art using Guid(b2cd1d492e565ca4a9e354d1a84544dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60eced6f32a386d8d50bb57b2da0f6b9') in 0.005005 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.166432 seconds.
+  path: Assets/Airplane Physics/Materials
+  artifactKey: Guid(d5c8cb0c9b9225049a1bcb54a91416b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Airplane Physics/Materials using Guid(d5c8cb0c9b9225049a1bcb54a91416b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce890fe350db7de6b71221a77b1ab854') in 0.005223 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.581017 seconds.
+  path: Assets/Airplane Physics/Prefabs
+  artifactKey: Guid(e88581aff768bc7438fabded6c5b493e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Airplane Physics/Prefabs using Guid(e88581aff768bc7438fabded6c5b493e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d865f5e2a7e2a9e6a585f2019d214eb') in 0.004784 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.882471 seconds.
+  path: Assets/Airplane Physics/Objects
+  artifactKey: Guid(56f655e991979984bb1b0ace33ecca32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Airplane Physics/Objects using Guid(56f655e991979984bb1b0ace33ecca32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85bd4fc3ee63c52a5c861ad8d309f09d') in 0.005238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.552465 seconds.
+  path: Assets/Airplane Physics/Objects/Airplanes
+  artifactKey: Guid(519b621ce516fc34c9dbea6b23c4d20e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Airplane Physics/Objects/Airplanes using Guid(519b621ce516fc34c9dbea6b23c4d20e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baa593b318c4c1b08ed53fa043e47424') in 0.005307 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.578760 seconds.
+  path: Assets/Airplane Physics/Prefabs/Airplanes/Plane.prefab
+  artifactKey: Guid(4a970ef981184a04983294aa19a3ed42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Airplane Physics/Prefabs/Airplanes/Plane.prefab using Guid(4a970ef981184a04983294aa19a3ed42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0555c4a5c3d9610fcddc52f0ea1c45b0') in 0.040520 seconds 
