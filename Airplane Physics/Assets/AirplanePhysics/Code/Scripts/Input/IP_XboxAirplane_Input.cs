@@ -4,18 +4,31 @@ using UnityEngine;
 
 namespace Inputs
 {
-    public class IP_XboxAirplane_Input : MonoBehaviour
+    public class IP_XboxAirplane_Input : IP_BaseAirplane_Input
     {
-        // Start is called before the first frame update
-        void Start()
+        protected override void HandleInput()
         {
+            // Process Main Control Inputs
+            pitch = Input.GetAxis("Vertical");
+            roll = Input.GetAxis("Horizontal");
+            yaw = Input.GetAxis("Xbox_RH_Stick");
+            throttle = Input.GetAxis("Xbox_RV_Stick");
 
-        }
+            // Process Brake Inputs
+            brake = Input.GetAxis("Fire1");
 
-        // Update is called once per frame
-        void Update()
-        {
+            // Process Flaps Inputs
+            if (Input.GetButtonDown("Xbox_R_Bumper"))
+            {
+                flaps += 1;
+            }
 
+            if (Input.GetButtonDown("Xbox_L_Bumper"))
+            {
+                flaps -= 1;
+            }
+
+            flaps = Mathf.Clamp(flaps, 0, maxFlapIncrements);
         }
     }
 }

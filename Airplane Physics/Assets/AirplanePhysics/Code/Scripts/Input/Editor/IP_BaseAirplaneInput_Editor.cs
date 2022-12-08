@@ -25,7 +25,7 @@ namespace Inputs
             debugInfo += "Pitch:" + targetInput.Pitch + "\n";
             debugInfo += "Roll:" + targetInput.Roll + "\n";
             debugInfo += "Yaw:" + targetInput.Yaw + "\n";
-            debugInfo += "Thruttle:" + targetInput.Thruttle + "\n";
+            debugInfo += "Throttle:" + targetInput.Throttle + "\n";
             debugInfo += "Brake:" + targetInput.Brake + "\n";
             debugInfo += "Flaps:" + targetInput.Flaps + "\n";
             // Custom Editor Code

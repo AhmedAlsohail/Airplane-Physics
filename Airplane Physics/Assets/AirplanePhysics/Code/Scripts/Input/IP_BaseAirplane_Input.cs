@@ -11,7 +11,7 @@ namespace Inputs
         protected float pitch = 0f;
         protected float roll = 0f;
         protected float yaw = 0f;
-        protected float thruttle = 0f;
+        protected float throttle = 0f;
         
 
         public KeyCode brakeKey = KeyCode.LeftShift;
@@ -34,9 +34,9 @@ namespace Inputs
         {
             get { return yaw; }
         }
-        public float Thruttle
+        public float Throttle
         {
-            get { return thruttle; }
+            get { return throttle; }
         }
         public int Flaps
         {
@@ -62,13 +62,13 @@ namespace Inputs
 
 
         #region Custom Methods
-        void HandleInput()
+        protected virtual void HandleInput()
         {
             // Process Main Control Inputs
             pitch = Input.GetAxis("Vertical");
             roll = Input.GetAxis("Horizontal");
             yaw = Input.GetAxis("Yaw");
-            thruttle = Input.GetAxis("Throttle");
+            throttle = Input.GetAxis("Throttle");
 
             // Process Brake Inputs
             brake = Input.GetKey(brakeKey) ? 1f : 0f;
