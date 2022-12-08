@@ -358,6 +358,7 @@
 "Assets/AirplanePhysics/Code/Scripts/Engine/IP_Airplane_Engine.cs"
 "Assets/AirplanePhysics/Code/Scripts/Input/IP_BaseAirplane_Input.cs"
 "Assets/AirplanePhysics/Code/Scripts/Input/IP_XboxAirplane_Input.cs"
+"Assets/AirplanePhysics/Code/Scripts/Propellers/IP_Airplane_Propeller.cs"
 "Assets/AirplanePhysics/Code/Scripts/Wheels/IP_Airplane_Wheel.cs"
 "Assets/Premade-Assets/IndiePixel_Framework/Core/Code/Cameras/IP_CameraSwitcher_Util.cs"
 "Assets/Premade-Assets/IndiePixel_Framework/Core/Code/Cameras/IP_RotateAroundPoint_Util.cs"
