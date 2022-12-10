@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Inputs
-{
+{   
     public class IP_XboxAirplane_Input : IP_BaseAirplane_Input
     {
+        #region Variables     
+        #endregion
+
+        #region Variables
         protected override void HandleInput()
         {
             // Process Main Control Inputs
@@ -13,7 +17,7 @@ namespace Inputs
             roll = Input.GetAxis("Horizontal");
             yaw = Input.GetAxis("Xbox_RH_Stick");
             throttle = Input.GetAxis("Xbox_RV_Stick");
-
+            StickyThrottleControl();
             // Process Brake Inputs
             brake = Input.GetAxis("Fire1");
 
@@ -30,5 +34,7 @@ namespace Inputs
 
             flaps = Mathf.Clamp(flaps, 0, maxFlapIncrements);
         }
+
     }
+    #endregion
 }

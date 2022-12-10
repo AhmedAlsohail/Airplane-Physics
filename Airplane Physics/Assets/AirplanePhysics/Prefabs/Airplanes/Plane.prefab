@@ -593,6 +593,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 845f6788793539649a809be5f86e12c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxForce: 3000
+  maxRPM: 2550
+  powerCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.17632402
+      value: 0.32155788
+      inSlope: 1.647352
+      outSlope: 1.647352
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  propeller: {fileID: 221530638}
 --- !u!1 &1990430490
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,6 +725,7 @@ GameObject:
   - component: {fileID: 5219322552919935652}
   - component: {fileID: 9057340541357229857}
   - component: {fileID: 8948124868777283106}
+  - component: {fileID: 7668746030220718092}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -854,6 +891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: {fileID: 9057340541357229857}
+  characteristics: {fileID: 0}
   centerOfGravity: {fileID: 861870800}
   airplaneWeight: 544.3104
   engines:
@@ -862,6 +900,20 @@ MonoBehaviour:
   - {fileID: 743263182}
   - {fileID: 1774395587}
   - {fileID: 1129340145}
+--- !u!114 &7668746030220718092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5515128334253589903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e28988f80cfeb9498632c06be4b55d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forwardSpeed: 0
+  mph: 0
 --- !u!1001 &2969394307578451315
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -872,6 +924,18 @@ PrefabInstance:
     - target: {fileID: 100008, guid: 0a5b6c85101505647b87da703d0ae99a, type: 3}
       propertyPath: m_Name
       value: Plane Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 0a5b6c85101505647b87da703d0ae99a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99998564
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 0a5b6c85101505647b87da703d0ae99a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00537106
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 0a5b6c85101505647b87da703d0ae99a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0.615
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 0a5b6c85101505647b87da703d0ae99a, type: 3}
       propertyPath: m_RootOrder
@@ -917,6 +981,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400024, guid: 0a5b6c85101505647b87da703d0ae99a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400024, guid: 0a5b6c85101505647b87da703d0ae99a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a5b6c85101505647b87da703d0ae99a, type: 3}
 --- !u!4 &2969394307578056699 stripped
@@ -924,3 +996,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400008, guid: 0a5b6c85101505647b87da703d0ae99a, type: 3}
   m_PrefabInstance: {fileID: 2969394307578451315}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2969394307578352585 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100026, guid: 0a5b6c85101505647b87da703d0ae99a, type: 3}
+  m_PrefabInstance: {fileID: 2969394307578451315}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &221530638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2969394307578352585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9890be590dbe447a7822559e7120fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -19,6 +19,9 @@ namespace Inputs
 
         protected int flaps = 0;
         public int maxFlapIncrements = 2;
+
+        public float throttleSpeed = 0.1f;
+        protected float stickyThrottle;
         #endregion
 
         #region Properties
@@ -46,6 +49,11 @@ namespace Inputs
         {
             get { return brake; }
         }
+
+        public float StickyThrottle
+        {
+            get { return stickyThrottle; }
+        }
         #endregion
 
         #region Builtin Methods
@@ -69,6 +77,7 @@ namespace Inputs
             roll = Input.GetAxis("Horizontal");
             yaw = Input.GetAxis("Yaw");
             throttle = Input.GetAxis("Throttle");
+            StickyThrottleControl();
 
             // Process Brake Inputs
             brake = Input.GetKey(brakeKey) ? 1f : 0f;
@@ -85,6 +94,12 @@ namespace Inputs
             }
 
             flaps = Mathf.Clamp(flaps, 0, maxFlapIncrements);
+        }
+
+        protected void StickyThrottleControl()
+        {
+            stickyThrottle = stickyThrottle + (throttle * throttleSpeed * Time.deltaTime);
+            stickyThrottle = Mathf.Clamp01(stickyThrottle);
         }
         #endregion
     }

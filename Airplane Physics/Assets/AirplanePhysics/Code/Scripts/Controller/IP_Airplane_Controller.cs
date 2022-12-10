@@ -4,11 +4,13 @@ using UnityEngine;
 
 namespace Inputs
 {
+    [RequireComponent(typeof(IP_Airplane_Characteristics))]
     public class IP_Airplane_Controller : IP_BaseRigidbody_Controller
     {
         #region Variables
         [Header("Base Airplane Properties")]
         public IP_BaseAirplane_Input input;
+        public IP_Airplane_Characteristics characteristics;
         public Transform centerOfGravity;
 
         [Tooltip("Weight is in Kilograms")]
@@ -36,6 +38,12 @@ namespace Inputs
                 {
                     rb.centerOfMass = centerOfGravity.localPosition;
                 }
+
+                characteristics = GetComponent<IP_Airplane_Characteristics>();
+                if (characteristics)
+                {
+                    characteristics.InitCharacteristics(rb);
+                }
             }
 
             if(wheels != null)
@@ -58,7 +66,7 @@ namespace Inputs
             if (input)
             {
                 HandleEngine();
-                HandleAerodynamic();
+                HandleCharacteristics();
                 HandleSteering();
                 HandleBreaks();
                 HandleAltitude();
@@ -66,22 +74,25 @@ namespace Inputs
         }
 
         void HandleEngine()
-        {
+        {   
             if(engines != null)
             {
                 if(engines.Count > 0)
                 {
                     foreach (IP_Airplane_Engine engine in engines)
                     {
-                        rb.AddForce(engine.CalculateForce(input.Throttle));
+                        rb.AddForce(engine.CalculateForce(input.StickyThrottle));
                     }
                 }
             }
         }
 
-        void HandleAerodynamic()
+        void HandleCharacteristics()
         {
-
+            if (characteristics)
+            {
+                characteristics.UpdateCharacteristics();
+            }
         }
 
         void HandleSteering()
