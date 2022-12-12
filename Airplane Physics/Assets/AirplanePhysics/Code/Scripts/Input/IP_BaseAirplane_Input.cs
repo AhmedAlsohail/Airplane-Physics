@@ -65,6 +65,7 @@ namespace Inputs
         void Update()
         {
             HandleInput();
+            ClampInputs();
         }
         #endregion
 
@@ -100,6 +101,14 @@ namespace Inputs
         {
             stickyThrottle = stickyThrottle + (throttle * throttleSpeed * Time.deltaTime);
             stickyThrottle = Mathf.Clamp01(stickyThrottle);
+        }
+
+        protected void ClampInputs()
+        {
+            pitch = Mathf.Clamp(pitch, -1, 1);
+            roll = Mathf.Clamp(roll, -1, 1);
+            yaw = Mathf.Clamp(yaw, -1, 1);
+            throttle = Mathf.Clamp(throttle, -1, 1);
         }
         #endregion
     }

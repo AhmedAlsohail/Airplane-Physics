@@ -1,3 +1,4 @@
+using input;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,6 +22,9 @@ namespace Inputs
 
         [Header("Wheels")]
         public List<IP_Airplane_Wheel> wheels = new List<IP_Airplane_Wheel>();
+
+        [Header("Control Surfaces")]
+        public List<IP_Airplane_ControlSurface> controlSurfaces = new List<IP_Airplane_ControlSurface>();
         #endregion
 
         #region Constants
@@ -33,7 +37,7 @@ namespace Inputs
 
             if (rb)
             {
-                rb.mass = airplaneWeight;
+                rb.mass = airplaneWeight; // Set plane weight
                 if (centerOfGravity)
                 {
                     rb.centerOfMass = centerOfGravity.localPosition;
@@ -42,7 +46,7 @@ namespace Inputs
                 characteristics = GetComponent<IP_Airplane_Characteristics>();
                 if (characteristics)
                 {
-                    characteristics.InitCharacteristics(rb);
+                    characteristics.InitCharacteristics(rb, input);
                 }
             }
 
@@ -67,6 +71,7 @@ namespace Inputs
             {
                 HandleEngine();
                 HandleCharacteristics();
+                HandleControlSurfaces();
                 HandleSteering();
                 HandleBreaks();
                 HandleAltitude();
@@ -92,6 +97,17 @@ namespace Inputs
             if (characteristics)
             {
                 characteristics.UpdateCharacteristics();
+            }
+        }
+
+        void HandleControlSurfaces()
+        {
+            if (controlSurfaces.Count > 0)
+            {
+                foreach(IP_Airplane_ControlSurface controlSurface in controlSurfaces)
+                {
+                    controlSurface.HandleControlSurface(input);
+                }
             }
         }
 

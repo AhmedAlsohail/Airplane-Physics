@@ -9,17 +9,18 @@ namespace Inputs
         #region Variables     
         #endregion
 
-        #region Variables
+        #region Custom Methods
         protected override void HandleInput()
         {
+            base.HandleInput();
             // Process Main Control Inputs
-            pitch = Input.GetAxis("Vertical");
-            roll = Input.GetAxis("Horizontal");
-            yaw = Input.GetAxis("Xbox_RH_Stick");
-            throttle = Input.GetAxis("Xbox_RV_Stick");
+            pitch += Input.GetAxis("Vertical");
+            roll += Input.GetAxis("Horizontal");
+            yaw += Input.GetAxis("Xbox_RH_Stick");
+            throttle += Input.GetAxis("Xbox_RV_Stick");
             StickyThrottleControl();
             // Process Brake Inputs
-            brake = Input.GetAxis("Fire1");
+            brake += Input.GetAxis("Fire1");
 
             // Process Flaps Inputs
             if (Input.GetButtonDown("Xbox_R_Bumper"))
@@ -34,7 +35,6 @@ namespace Inputs
 
             flaps = Mathf.Clamp(flaps, 0, maxFlapIncrements);
         }
-
     }
     #endregion
 }
