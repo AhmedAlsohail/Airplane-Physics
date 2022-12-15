@@ -72,8 +72,7 @@ namespace Inputs
                 HandleEngine();
                 HandleCharacteristics();
                 HandleControlSurfaces();
-                HandleSteering();
-                HandleBreaks();
+                HandleWheel();
                 HandleAltitude();
             }            
         }
@@ -111,14 +110,15 @@ namespace Inputs
             }
         }
 
-        void HandleSteering()
+        void HandleWheel()
         {
-
-        }
-
-        void HandleBreaks()
-        {
-
+            if(wheels.Count > 0)
+            {
+                foreach(IP_Airplane_Wheel wheel in wheels)
+                {
+                    wheel.UpdateWheel(input);
+                }
+            }
         }
 
         void HandleAltitude()
