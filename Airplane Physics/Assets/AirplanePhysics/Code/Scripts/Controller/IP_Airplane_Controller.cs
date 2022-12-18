@@ -10,6 +10,7 @@ namespace Inputs
     {
         #region Variables
         [Header("Base Airplane Properties")]
+        public Airplane_Preset airplanePreset;
         public IP_BaseAirplane_Input input;
         public IP_Airplane_Characteristics characteristics;
         public Transform centerOfGravity;
@@ -33,6 +34,7 @@ namespace Inputs
         #region Built In Methods
         public override void Start()
         {
+            GetPresetInfo();
             base.Start();
 
             if (rb)
@@ -124,6 +126,28 @@ namespace Inputs
         void HandleAltitude()
         {
 
+        }
+
+        void GetPresetInfo()
+        {
+            if (airplanePreset)
+            {
+                airplaneWeight = airplanePreset.airplaneWeight;
+                centerOfGravity.localPosition = airplanePreset.cogPosition;
+
+                if (characteristics)
+                {
+                    characteristics.dragFactor = airplanePreset.dragFactor;
+                    characteristics.flapDragFactor= airplanePreset.flapDragFactor;
+                    characteristics.liftCurve= airplanePreset.liftCurve;
+                    characteristics.maxLiftPower= airplanePreset.maxLiftPower;
+                    characteristics.maxMPS= airplanePreset.maxMPS;
+                    characteristics.rbLerpSpeed= airplanePreset.rbLerpSpeed;
+                    characteristics.rollTorque= airplanePreset.rollTorque;
+                    characteristics.pitchTorque= airplanePreset.pitchTorque;
+                    characteristics.yawTorque= airplanePreset.yawTorque;
+                }
+            }
         }
         #endregion
     }

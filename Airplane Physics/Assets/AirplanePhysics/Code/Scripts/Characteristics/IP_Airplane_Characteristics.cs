@@ -91,8 +91,8 @@ namespace Inputs
             // Calculate forward velocity (in MPS)
             Vector3 localVelocity = transform.InverseTransformDirection(rb.velocity); //Transform the Rigidbody velocity vector from world space to local space
             forwardSpeed = Mathf.Max(0f, localVelocity.z); // Take the z-axis, and forward speed shouldn't be > 0.
-            //forwardSpeed = Mathf.Clamp(forwardSpeed, 0f, maxMPS);
-
+            forwardSpeed = Mathf.Clamp(forwardSpeed, 0f, maxMPS);
+            Debug.Log(forwardSpeed);
             normalizeMPS = Mathf.InverseLerp(0f, maxMPS, forwardSpeed); // Normalize.
         }
 
@@ -177,11 +177,9 @@ namespace Inputs
         void handleBanking()
         {
             float bankSide = Mathf.InverseLerp(-90f, 90f, rollAngle);
-            Debug.Log(rollAngle);
             float bankAmount = Mathf.Lerp(-1f, 1f, bankSide);
             Vector3 bankTorque = bankAmount * rollTorque * transform.up;
             rb.AddTorque(bankTorque);
-            Debug.Log(bankTorque);
         }
         #endregion
     }
